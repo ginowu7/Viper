@@ -15,7 +15,6 @@ class AchievementsView: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         presenter?.updateView()
     }
 }
@@ -30,10 +29,7 @@ extension AchievementsView: AchievementsPresenterToViewProtocol {
     }
 
     func showAchievements(_ achievements: [Achievement], display: AchievementDisplay) {
-        let controller = UIAlertController(title: "GOT IT", message: "GOT IT", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .cancel)
-        controller.addAction(okAction)
-        present(controller, animated: true)
+        navigationItem.title = display.title
     }
 }
 

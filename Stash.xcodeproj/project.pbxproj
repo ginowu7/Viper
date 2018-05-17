@@ -12,7 +12,7 @@
 		7D66EF8120AA499D00161EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D66EF7F20AA499D00161EE7 /* LaunchScreen.storyboard */; };
 		7D66EF8C20AA499D00161EE7 /* StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66EF8B20AA499D00161EE7 /* StashTests.swift */; };
 		7D66EF9720AA499D00161EE7 /* StashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66EF9620AA499D00161EE7 /* StashUITests.swift */; };
-		7D66EFA520AA4A5300161EE7 /* AchievementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66EFA420AA4A5300161EE7 /* AchievementsTableViewController.swift */; };
+		7D66EFA520AA4A5300161EE7 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66EFA420AA4A5300161EE7 /* AchievementsView.swift */; };
 		7D6ADACE20AD06A90082CFCB /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADACD20AD06A90082CFCB /* AchievementsInteractor.swift */; };
 		7D6ADAD120AD081C0082CFCB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD020AD081C0082CFCB /* APIClient.swift */; };
 		7D6ADAD320AD0CA40082CFCB /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD220AD0CA40082CFCB /* achievements.json */; };
@@ -24,6 +24,9 @@
 		7D6ADAE020AD15460082CFCB /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADADF20AD15460082CFCB /* AchievementsPresenter.swift */; };
 		7D6ADAE320AD1C330082CFCB /* AchievementsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE220AD1C330082CFCB /* AchievementsProtocol.swift */; };
 		7D6ADAE520AD1FE20082CFCB /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE420AD1FE20082CFCB /* AchievementsRouter.swift */; };
+		7D6ADAE720AD273C0082CFCB /* StashNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE620AD273C0082CFCB /* StashNavigationController.swift */; };
+		7D6ADAEA20AD29630082CFCB /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE920AD29630082CFCB /* UIFontExtensions.swift */; };
+		7D6ADAEC20AD29820082CFCB /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +58,7 @@
 		7D66EF9220AA499D00161EE7 /* StashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D66EF9620AA499D00161EE7 /* StashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashUITests.swift; sourceTree = "<group>"; };
 		7D66EF9820AA499D00161EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D66EFA420AA4A5300161EE7 /* AchievementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsTableViewController.swift; sourceTree = "<group>"; };
+		7D66EFA420AA4A5300161EE7 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		7D6ADACD20AD06A90082CFCB /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
 		7D6ADAD020AD081C0082CFCB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		7D6ADAD220AD0CA40082CFCB /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
@@ -67,6 +70,9 @@
 		7D6ADADF20AD15460082CFCB /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		7D6ADAE220AD1C330082CFCB /* AchievementsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsProtocol.swift; sourceTree = "<group>"; };
 		7D6ADAE420AD1FE20082CFCB /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
+		7D6ADAE620AD273C0082CFCB /* StashNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashNavigationController.swift; sourceTree = "<group>"; };
+		7D6ADAE920AD29630082CFCB /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		7D66EF7520AA499B00161EE7 /* Stash */ = {
 			isa = PBXGroup;
 			children = (
+				7D6ADAE820AD29590082CFCB /* Extensions */,
 				7D6ADAE120AD1C230082CFCB /* Protocol */,
 				7D6ADACF20AD08150082CFCB /* Network */,
 				7D6ADACC20AD06790082CFCB /* Routing */,
@@ -161,7 +168,8 @@
 		7D6ADAC920AD06520082CFCB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7D66EFA420AA4A5300161EE7 /* AchievementsTableViewController.swift */,
+				7D66EFA420AA4A5300161EE7 /* AchievementsView.swift */,
+				7D6ADAE620AD273C0082CFCB /* StashNavigationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +225,15 @@
 				7D6ADAE220AD1C330082CFCB /* AchievementsProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7D6ADAE820AD29590082CFCB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7D6ADAE920AD29630082CFCB /* UIFontExtensions.swift */,
+				7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,12 +369,15 @@
 			files = (
 				7D6ADAE520AD1FE20082CFCB /* AchievementsRouter.swift in Sources */,
 				7D6ADAE320AD1C330082CFCB /* AchievementsProtocol.swift in Sources */,
+				7D6ADAEA20AD29630082CFCB /* UIFontExtensions.swift in Sources */,
 				7D6ADADA20AD11570082CFCB /* AchievementParser.swift in Sources */,
 				7D6ADAD120AD081C0082CFCB /* APIClient.swift in Sources */,
 				7D6ADACE20AD06A90082CFCB /* AchievementsInteractor.swift in Sources */,
-				7D66EFA520AA4A5300161EE7 /* AchievementsTableViewController.swift in Sources */,
+				7D66EFA520AA4A5300161EE7 /* AchievementsView.swift in Sources */,
 				7D66EF7720AA499B00161EE7 /* AppDelegate.swift in Sources */,
 				7D6ADADE20AD11910082CFCB /* Parser.swift in Sources */,
+				7D6ADAEC20AD29820082CFCB /* UIColorExtensions.swift in Sources */,
+				7D6ADAE720AD273C0082CFCB /* StashNavigationController.swift in Sources */,
 				7D6ADADC20AD11750082CFCB /* AchievementDisplayParser.swift in Sources */,
 				7D6ADAD720AD0FCE0082CFCB /* AchievementDisplay.swift in Sources */,
 				7D6ADAE020AD15460082CFCB /* AchievementsPresenter.swift in Sources */,
