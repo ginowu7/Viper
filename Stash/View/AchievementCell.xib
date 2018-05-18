@@ -20,30 +20,88 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSg-C5-jtH">
-                        <rect key="frame" x="16" y="0.0" width="301" height="223.5"/>
+                        <rect key="frame" x="21" y="8" width="291" height="207.5"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsS-hZ-k8b">
-                        <rect key="frame" x="116" y="61" width="100" height="100"/>
-                        <color key="backgroundColor" red="1" green="0.067612297690000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="116" y="42" width="100" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-4O-GYr">
+                                <rect key="frame" x="10" y="44" width="80" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C33-lO-lLk">
+                                <rect key="frame" x="10" y="20" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oaD-4O-GYr" secondAttribute="bottom" constant="8" id="5tj-2O-2Ob"/>
+                            <constraint firstAttribute="trailing" secondItem="C33-lO-lLk" secondAttribute="trailing" constant="10" id="6wO-WV-5vb"/>
                             <constraint firstAttribute="width" constant="100" id="8Vz-kf-x2d"/>
                             <constraint firstAttribute="height" constant="100" id="SMA-ai-bee"/>
+                            <constraint firstItem="oaD-4O-GYr" firstAttribute="leading" secondItem="JsS-hZ-k8b" secondAttribute="leading" constant="10" id="U2k-my-Lm4"/>
+                            <constraint firstAttribute="trailing" secondItem="oaD-4O-GYr" secondAttribute="trailing" constant="10" id="amv-tf-FTn"/>
+                            <constraint firstItem="C33-lO-lLk" firstAttribute="leading" secondItem="JsS-hZ-k8b" secondAttribute="leading" constant="10" id="iBQ-5U-h2a"/>
+                            <constraint firstItem="oaD-4O-GYr" firstAttribute="top" secondItem="C33-lO-lLk" secondAttribute="bottom" constant="3" id="p9F-Vq-cAs"/>
+                            <constraint firstItem="C33-lO-lLk" firstAttribute="top" secondItem="JsS-hZ-k8b" secondAttribute="top" constant="20" id="tS0-JI-cjm"/>
                         </constraints>
+                    </view>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="awd-mJ-9ob">
+                        <rect key="frame" x="36" y="162" width="261" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-l3-dkm">
+                        <rect key="frame" x="36" y="177" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-N1-PgE">
+                        <rect key="frame" x="255" y="177" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0h-Rh-aSp">
+                        <rect key="frame" x="0.0" y="0.0" width="333" height="223.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="BSg-C5-jtH" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" id="P1w-4V-QND"/>
-                    <constraint firstAttribute="bottom" secondItem="BSg-C5-jtH" secondAttribute="bottom" id="SKD-0L-0bb"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="JsS-hZ-k8b" secondAttribute="bottom" constant="52" id="Wu7-78-7Xe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="BSg-C5-jtH" secondAttribute="trailing" id="fcK-e0-WFz"/>
+                    <constraint firstItem="JsS-hZ-k8b" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="topMargin" constant="31" id="0CQ-q3-iK5"/>
+                    <constraint firstItem="HDQ-l3-dkm" firstAttribute="leading" secondItem="awd-mJ-9ob" secondAttribute="leading" id="21Q-IF-iuw"/>
+                    <constraint firstItem="HDQ-l3-dkm" firstAttribute="top" secondItem="awd-mJ-9ob" secondAttribute="bottom" constant="13" id="9MV-gW-Bd1"/>
+                    <constraint firstItem="n0h-Rh-aSp" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" id="Dfu-sT-a11"/>
+                    <constraint firstAttribute="bottom" secondItem="n0h-Rh-aSp" secondAttribute="bottom" id="FX1-qe-Hun"/>
+                    <constraint firstItem="awd-mJ-9ob" firstAttribute="top" secondItem="JsS-hZ-k8b" secondAttribute="bottom" constant="20" id="GbI-mD-Jb7"/>
+                    <constraint firstAttribute="trailing" secondItem="n0h-Rh-aSp" secondAttribute="trailing" id="M2E-i7-j9h"/>
+                    <constraint firstItem="BSg-C5-jtH" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" constant="8" id="P1w-4V-QND"/>
+                    <constraint firstAttribute="bottom" secondItem="BSg-C5-jtH" secondAttribute="bottom" constant="8" id="SKD-0L-0bb"/>
+                    <constraint firstItem="OU2-N1-PgE" firstAttribute="trailing" secondItem="awd-mJ-9ob" secondAttribute="trailing" id="Uhx-iK-sU7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="JsS-hZ-k8b" secondAttribute="bottom" constant="71" id="e1v-Tt-OXE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BSg-C5-jtH" secondAttribute="trailing" constant="5" id="fcK-e0-WFz"/>
+                    <constraint firstItem="OU2-N1-PgE" firstAttribute="centerY" secondItem="HDQ-l3-dkm" secondAttribute="centerY" id="gAY-KC-4gc"/>
                     <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerX" secondItem="SSg-Db-BTh" secondAttribute="centerX" id="k5v-dL-k3S"/>
-                    <constraint firstItem="BSg-C5-jtH" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leadingMargin" id="mCC-W5-QBq"/>
-                    <constraint firstItem="JsS-hZ-k8b" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="topMargin" constant="50" id="nCe-5n-MuR"/>
-                    <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerY" secondItem="SSg-Db-BTh" secondAttribute="centerY" id="oQu-AC-MEY"/>
+                    <constraint firstItem="awd-mJ-9ob" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leading" constant="36" id="lu6-Mc-hIM"/>
+                    <constraint firstItem="BSg-C5-jtH" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leadingMargin" constant="5" id="mCC-W5-QBq"/>
+                    <constraint firstAttribute="trailing" secondItem="awd-mJ-9ob" secondAttribute="trailing" constant="36" id="oPo-bS-x89"/>
+                    <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerY" secondItem="SSg-Db-BTh" secondAttribute="centerY" constant="-20" id="oQu-AC-MEY"/>
+                    <constraint firstItem="n0h-Rh-aSp" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leading" id="prS-nQ-RSu"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="backgroundImageView" destination="BSg-C5-jtH" id="83B-5o-fky"/>
+                <outlet property="leadingProgressLabel" destination="HDQ-l3-dkm" id="cS2-WD-qjE"/>
                 <outlet property="levelContainerView" destination="JsS-hZ-k8b" id="egY-qA-CeX"/>
+                <outlet property="levelLabel" destination="C33-lO-lLk" id="y3K-h9-ym4"/>
+                <outlet property="levelValueLabel" destination="oaD-4O-GYr" id="zGZ-WH-YxH"/>
+                <outlet property="progressView" destination="awd-mJ-9ob" id="yTV-Bv-ykd"/>
+                <outlet property="trailingProgressLabel" destination="OU2-N1-PgE" id="HlK-x1-BAB"/>
+                <outlet property="transparentView" destination="n0h-Rh-aSp" id="fm2-DH-2nj"/>
             </connections>
             <point key="canvasLocation" x="-66.5" y="10"/>
         </tableViewCell>

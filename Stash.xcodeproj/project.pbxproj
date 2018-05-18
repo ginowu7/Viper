@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D27FDC620AF6FD100B194AD /* AchievementCellFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D27FDC520AF6FD100B194AD /* AchievementCellFormatter.swift */; };
 		7D66EF7720AA499B00161EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66EF7620AA499B00161EE7 /* AppDelegate.swift */; };
 		7D66EF7E20AA499D00161EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D66EF7D20AA499D00161EE7 /* Assets.xcassets */; };
 		7D66EF8120AA499D00161EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D66EF7F20AA499D00161EE7 /* LaunchScreen.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D27FDC520AF6FD100B194AD /* AchievementCellFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCellFormatter.swift; sourceTree = "<group>"; };
 		7D66EF7320AA499B00161EE7 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D66EF7620AA499B00161EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D66EF7D20AA499D00161EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				7D6ADAD420AD0F460082CFCB /* Achievement.swift */,
 				7D6ADAD620AD0FCE0082CFCB /* AchievementOverview.swift */,
+				7D27FDC520AF6FD100B194AD /* AchievementCellFormatter.swift */,
 			);
 			path = Achievement;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				7D6ADAE320AD1C330082CFCB /* AchievementsProtocol.swift in Sources */,
 				7D6ADAEA20AD29630082CFCB /* UIFontExtensions.swift in Sources */,
 				7D6ADAD120AD081C0082CFCB /* APIClient.swift in Sources */,
+				7D27FDC620AF6FD100B194AD /* AchievementCellFormatter.swift in Sources */,
 				7D6ADACE20AD06A90082CFCB /* AchievementsInteractor.swift in Sources */,
 				7D66EFA520AA4A5300161EE7 /* AchievementsView.swift in Sources */,
 				7D66EF7720AA499B00161EE7 /* AppDelegate.swift in Sources */,
@@ -610,6 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Stash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -628,6 +633,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Stash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

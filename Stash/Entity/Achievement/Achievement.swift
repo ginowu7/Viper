@@ -11,10 +11,10 @@ import Foundation
 struct Achievement: Codable {
     let id: Int
     let level: String
-    let progress: Int
-    let total: Int
+    let progress: Float
+    let total: Float
     let image: String
-    let accessible: Bool
+    let isAccessible: Bool
     var imageUrl: URL? {
         return URL(string: image)
     }
@@ -25,6 +25,6 @@ struct Achievement: Codable {
         case progress
         case total
         case image = "bg_image_url"
-        case accessible
+        case isAccessible = "accessible"
     }
 }

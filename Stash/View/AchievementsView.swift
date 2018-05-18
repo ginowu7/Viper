@@ -26,10 +26,20 @@ class AchievementsView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureBarButtonItem()
         presenter?.updateView()
     }
 
+    private func configureBarButtonItem() {
+        let button = UIButton(type: .infoLight)
+        button.tintColor = .white
+        let barButtonItem = UIBarButtonItem(customView: button)
+        navigationItem.rightBarButtonItem = barButtonItem
+    }
+
     private func configureTableView() {
+        tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        tableView.separatorStyle = .none
         tableView.estimatedRowHeight = 150.0
         tableView.rowHeight = UITableViewAutomaticDimension
         let nib = UINib(nibName: String(describing: AchievementCell.self), bundle: nil)
@@ -60,6 +70,7 @@ extension AchievementsView {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AchievementCell.self)) as! AchievementCell
+        AchievementCellFormatter.format(cell: cell, achievement: achievements[indexPath.row])
         return cell
     }
 

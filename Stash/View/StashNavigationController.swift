@@ -22,4 +22,8 @@ class StashNavigationController: UINavigationController {
         navigationBar.titleTextAttributes = [.font: UIFont.navigationTitle, .foregroundColor: UIColor.primaryText]
         navigationBar.barTintColor = .tintBarColor
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

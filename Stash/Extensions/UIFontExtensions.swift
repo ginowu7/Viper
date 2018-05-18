@@ -13,4 +13,18 @@ extension UIFont {
     static var navigationTitle: UIFont {
         return UIFont(name: "AppleSDGothicNeo-Regular", size: 17.0)!
     }
+
+    static var headerSmall: UIFont {
+        return UIFont(name: "AppleSDGothicNeo-Regular", size: 17.0)!
+    }
+
+    static var headerBoldSmall: UIFont {
+        return UIFont(name: "AppleSDGothicNeo-Bold", size: 17.0)!
+    }
+
+
+    static var headerExtraLarge: UIFont {
+        return UIFont(name: "ArialHebrew-Bold", size: 60.0)!
+    }
+
 }
