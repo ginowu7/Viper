@@ -26,6 +26,7 @@
 		7D6ADAEC20AD29820082CFCB /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */; };
 		7D7D117A20AF63A40060EAC2 /* AchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7D117920AF63A40060EAC2 /* AchievementCell.xib */; };
 		7D7D117C20AF65690060EAC2 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7D117B20AF65690060EAC2 /* AchievementCell.swift */; };
+		F79DB7C5DD71ADA3F8C2482B /* Pods_Stash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493EF7F40D988B9563EE99C /* Pods_Stash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,9 @@
 		7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		7D7D117920AF63A40060EAC2 /* AchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCell.xib; sourceTree = "<group>"; };
 		7D7D117B20AF65690060EAC2 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		B493EF7F40D988B9563EE99C /* Pods_Stash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F73734FB31A409FFF1BDE0 /* Pods-Stash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.debug.xcconfig"; sourceTree = "<group>"; };
+		EAED89EC4786111BFD74732B /* Pods-Stash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stash/Pods-Stash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79DB7C5DD71ADA3F8C2482B /* Pods_Stash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A8B2D6E9A23032E82D299CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0F73734FB31A409FFF1BDE0 /* Pods-Stash.debug.xcconfig */,
+				EAED89EC4786111BFD74732B /* Pods-Stash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7D66EF6A20AA499B00161EE7 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +119,8 @@
 				7D66EF8A20AA499D00161EE7 /* StashTests */,
 				7D66EF9520AA499D00161EE7 /* StashUITests */,
 				7D66EF7420AA499B00161EE7 /* Products */,
+				7A8B2D6E9A23032E82D299CE /* Pods */,
+				EFA93A48EC0D6DC24497720E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +249,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EFA93A48EC0D6DC24497720E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B493EF7F40D988B9563EE99C /* Pods_Stash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D66EF9B20AA499D00161EE7 /* Build configuration list for PBXNativeTarget "Stash" */;
 			buildPhases = (
+				A4A367FF3AF457D5EE7423B6 /* [CP] Check Pods Manifest.lock */,
 				7D66EF6F20AA499B00161EE7 /* Sources */,
 				7D66EF7020AA499B00161EE7 /* Frameworks */,
 				7D66EF7120AA499B00161EE7 /* Resources */,
+				B3CF278FAA5B98B09B06596E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +385,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4A367FF3AF457D5EE7423B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CF278FAA5B98B09B06596E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stash/Pods-Stash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stash/Pods-Stash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D66EF6F20AA499B00161EE7 /* Sources */ = {
@@ -540,6 +605,7 @@
 		};
 		7D66EF9C20AA499D00161EE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F73734FB31A409FFF1BDE0 /* Pods-Stash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +623,7 @@
 		};
 		7D66EF9D20AA499D00161EE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAED89EC4786111BFD74732B /* Pods-Stash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
