@@ -19,9 +19,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="333" height="223.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSg-C5-jtH">
-                        <rect key="frame" x="21" y="8" width="291" height="207.5"/>
-                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suv-Nm-bSh">
+                        <rect key="frame" x="21" y="10" width="291" height="203.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSg-C5-jtH">
+                                <rect key="frame" x="0.0" y="0.0" width="291" height="203.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BSg-C5-jtH" firstAttribute="leading" secondItem="suv-Nm-bSh" secondAttribute="leading" id="DSd-CS-9rm"/>
+                            <constraint firstAttribute="trailing" secondItem="BSg-C5-jtH" secondAttribute="trailing" id="Hal-0t-Atf"/>
+                            <constraint firstAttribute="bottom" secondItem="BSg-C5-jtH" secondAttribute="bottom" id="Ps7-gz-KPj"/>
+                            <constraint firstItem="BSg-C5-jtH" firstAttribute="top" secondItem="suv-Nm-bSh" secondAttribute="top" id="pCf-eS-I2z"/>
+                        </constraints>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsS-hZ-k8b">
                         <rect key="frame" x="116" y="42" width="100" height="100"/>
                         <subviews>
@@ -73,27 +85,28 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="JsS-hZ-k8b" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="topMargin" constant="31" id="0CQ-q3-iK5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="suv-Nm-bSh" secondAttribute="trailing" constant="5" id="0qc-Ij-lks"/>
                     <constraint firstItem="HDQ-l3-dkm" firstAttribute="leading" secondItem="awd-mJ-9ob" secondAttribute="leading" id="21Q-IF-iuw"/>
                     <constraint firstItem="HDQ-l3-dkm" firstAttribute="top" secondItem="awd-mJ-9ob" secondAttribute="bottom" constant="13" id="9MV-gW-Bd1"/>
                     <constraint firstItem="n0h-Rh-aSp" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" id="Dfu-sT-a11"/>
                     <constraint firstAttribute="bottom" secondItem="n0h-Rh-aSp" secondAttribute="bottom" id="FX1-qe-Hun"/>
+                    <constraint firstAttribute="bottom" secondItem="suv-Nm-bSh" secondAttribute="bottom" constant="10" id="GWL-9Z-Gcf"/>
                     <constraint firstItem="awd-mJ-9ob" firstAttribute="top" secondItem="JsS-hZ-k8b" secondAttribute="bottom" constant="20" id="GbI-mD-Jb7"/>
                     <constraint firstAttribute="trailing" secondItem="n0h-Rh-aSp" secondAttribute="trailing" id="M2E-i7-j9h"/>
-                    <constraint firstItem="BSg-C5-jtH" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" constant="8" id="P1w-4V-QND"/>
-                    <constraint firstAttribute="bottom" secondItem="BSg-C5-jtH" secondAttribute="bottom" constant="8" id="SKD-0L-0bb"/>
                     <constraint firstItem="OU2-N1-PgE" firstAttribute="trailing" secondItem="awd-mJ-9ob" secondAttribute="trailing" id="Uhx-iK-sU7"/>
                     <constraint firstAttribute="bottomMargin" secondItem="JsS-hZ-k8b" secondAttribute="bottom" constant="71" id="e1v-Tt-OXE"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="BSg-C5-jtH" secondAttribute="trailing" constant="5" id="fcK-e0-WFz"/>
+                    <constraint firstItem="suv-Nm-bSh" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" constant="10" id="fhs-H8-O0N"/>
                     <constraint firstItem="OU2-N1-PgE" firstAttribute="centerY" secondItem="HDQ-l3-dkm" secondAttribute="centerY" id="gAY-KC-4gc"/>
                     <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerX" secondItem="SSg-Db-BTh" secondAttribute="centerX" id="k5v-dL-k3S"/>
                     <constraint firstItem="awd-mJ-9ob" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leading" constant="36" id="lu6-Mc-hIM"/>
-                    <constraint firstItem="BSg-C5-jtH" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leadingMargin" constant="5" id="mCC-W5-QBq"/>
                     <constraint firstAttribute="trailing" secondItem="awd-mJ-9ob" secondAttribute="trailing" constant="36" id="oPo-bS-x89"/>
                     <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerY" secondItem="SSg-Db-BTh" secondAttribute="centerY" constant="-20" id="oQu-AC-MEY"/>
                     <constraint firstItem="n0h-Rh-aSp" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leading" id="prS-nQ-RSu"/>
+                    <constraint firstItem="suv-Nm-bSh" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leadingMargin" constant="5" id="qHZ-0O-BV3"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="backgroundImageContainerView" destination="suv-Nm-bSh" id="dMo-iF-l8v"/>
                 <outlet property="backgroundImageView" destination="BSg-C5-jtH" id="83B-5o-fky"/>
                 <outlet property="leadingProgressLabel" destination="HDQ-l3-dkm" id="cS2-WD-qjE"/>
                 <outlet property="levelContainerView" destination="JsS-hZ-k8b" id="egY-qA-CeX"/>

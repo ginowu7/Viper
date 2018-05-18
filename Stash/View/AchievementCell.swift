@@ -19,14 +19,19 @@ class AchievementCell: UITableViewCell {
             levelContainerView.layer.cornerRadius = 50
         }
     }
+    @IBOutlet weak var backgroundImageContainerView: UIView! {
+        didSet {
+            backgroundImageContainerView.backgroundColor = .clear
+            backgroundImageContainerView.layer.cornerRadius = 2.0
+            backgroundImageContainerView.layer.shadowRadius = 5.0
+            backgroundImageContainerView.layer.shadowOpacity = 0.2
+        }
+    }
     @IBOutlet private weak var backgroundImageView: UIImageView! {
         didSet {
             backgroundImageView.layer.cornerRadius = 8.0
             backgroundImageView.clipsToBounds = true
             backgroundImageView.contentMode = .scaleAspectFill
-            backgroundImageView.layer.shadowRadius = 10.0
-            backgroundImageView.layer.shadowColor = UIColor.black.cgColor
-            backgroundImageView.layer.shadowOpacity = 0.8
         }
     }
     @IBOutlet private weak var levelLabel: UILabel! {
@@ -85,9 +90,12 @@ class AchievementCell: UITableViewCell {
             if isAccessible {
                 transparentView.isHidden = true
                 isUserInteractionEnabled = false
+                backgroundImageContainerView.layer.shadowColor = UIColor.black.cgColor
+
             } else {
                 transparentView.alpha = 0.6
                 isUserInteractionEnabled = true
+                backgroundImageContainerView.layer.shadowColor = UIColor.white.cgColor
             }
         }
     }

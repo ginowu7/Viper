@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stash/View/AchievementCell.swift"
-            timestampString = "548376746.456059"
+            timestampString = "548377295.095925"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "progress(_:total:)"
             landmarkType = "7">
          </BreakpointContent>
