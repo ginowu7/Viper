@@ -8,11 +8,23 @@
 
 import Foundation
 
-struct Achievement {
+struct Achievement: Codable {
     let id: Int
     let level: String
     let progress: Int
     let total: Int
-    let image: URL?
+    let image: String
     let accessible: Bool
+    var imageUrl: URL? {
+        return URL(string: image)
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case level
+        case progress
+        case total
+        case image = "bg_image_url"
+        case accessible
+    }
 }

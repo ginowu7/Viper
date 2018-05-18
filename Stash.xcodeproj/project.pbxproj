@@ -17,16 +17,15 @@
 		7D6ADAD120AD081C0082CFCB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD020AD081C0082CFCB /* APIClient.swift */; };
 		7D6ADAD320AD0CA40082CFCB /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD220AD0CA40082CFCB /* achievements.json */; };
 		7D6ADAD520AD0F460082CFCB /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD420AD0F460082CFCB /* Achievement.swift */; };
-		7D6ADAD720AD0FCE0082CFCB /* AchievementDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD620AD0FCE0082CFCB /* AchievementDisplay.swift */; };
-		7D6ADADA20AD11570082CFCB /* AchievementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD920AD11570082CFCB /* AchievementParser.swift */; };
-		7D6ADADC20AD11750082CFCB /* AchievementDisplayParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADADB20AD11750082CFCB /* AchievementDisplayParser.swift */; };
-		7D6ADADE20AD11910082CFCB /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADADD20AD11910082CFCB /* Parser.swift */; };
+		7D6ADAD720AD0FCE0082CFCB /* AchievementOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAD620AD0FCE0082CFCB /* AchievementOverview.swift */; };
 		7D6ADAE020AD15460082CFCB /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADADF20AD15460082CFCB /* AchievementsPresenter.swift */; };
 		7D6ADAE320AD1C330082CFCB /* AchievementsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE220AD1C330082CFCB /* AchievementsProtocol.swift */; };
 		7D6ADAE520AD1FE20082CFCB /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE420AD1FE20082CFCB /* AchievementsRouter.swift */; };
 		7D6ADAE720AD273C0082CFCB /* StashNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE620AD273C0082CFCB /* StashNavigationController.swift */; };
 		7D6ADAEA20AD29630082CFCB /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAE920AD29630082CFCB /* UIFontExtensions.swift */; };
 		7D6ADAEC20AD29820082CFCB /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */; };
+		7D7D117A20AF63A40060EAC2 /* AchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7D117920AF63A40060EAC2 /* AchievementCell.xib */; };
+		7D7D117C20AF65690060EAC2 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7D117B20AF65690060EAC2 /* AchievementCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,16 +62,15 @@
 		7D6ADAD020AD081C0082CFCB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		7D6ADAD220AD0CA40082CFCB /* achievements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 		7D6ADAD420AD0F460082CFCB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
-		7D6ADAD620AD0FCE0082CFCB /* AchievementDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDisplay.swift; sourceTree = "<group>"; };
-		7D6ADAD920AD11570082CFCB /* AchievementParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementParser.swift; sourceTree = "<group>"; };
-		7D6ADADB20AD11750082CFCB /* AchievementDisplayParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDisplayParser.swift; sourceTree = "<group>"; };
-		7D6ADADD20AD11910082CFCB /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		7D6ADAD620AD0FCE0082CFCB /* AchievementOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementOverview.swift; sourceTree = "<group>"; };
 		7D6ADADF20AD15460082CFCB /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		7D6ADAE220AD1C330082CFCB /* AchievementsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsProtocol.swift; sourceTree = "<group>"; };
 		7D6ADAE420AD1FE20082CFCB /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
 		7D6ADAE620AD273C0082CFCB /* StashNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashNavigationController.swift; sourceTree = "<group>"; };
 		7D6ADAE920AD29630082CFCB /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		7D6ADAEB20AD29820082CFCB /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		7D7D117920AF63A40060EAC2 /* AchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCell.xib; sourceTree = "<group>"; };
+		7D7D117B20AF65690060EAC2 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				7D66EFA420AA4A5300161EE7 /* AchievementsView.swift */,
+				7D7D117920AF63A40060EAC2 /* AchievementCell.xib */,
+				7D7D117B20AF65690060EAC2 /* AchievementCell.swift */,
 				7D6ADAE620AD273C0082CFCB /* StashNavigationController.swift */,
 			);
 			path = View;
@@ -178,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				7D6ADAD820AD11420082CFCB /* Achievement */,
-				7D6ADADD20AD11910082CFCB /* Parser.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -212,9 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				7D6ADAD420AD0F460082CFCB /* Achievement.swift */,
-				7D6ADAD620AD0FCE0082CFCB /* AchievementDisplay.swift */,
-				7D6ADADB20AD11750082CFCB /* AchievementDisplayParser.swift */,
-				7D6ADAD920AD11570082CFCB /* AchievementParser.swift */,
+				7D6ADAD620AD0FCE0082CFCB /* AchievementOverview.swift */,
 			);
 			path = Achievement;
 			sourceTree = "<group>";
@@ -341,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D66EF8120AA499D00161EE7 /* LaunchScreen.storyboard in Resources */,
+				7D7D117A20AF63A40060EAC2 /* AchievementCell.xib in Resources */,
 				7D66EF7E20AA499D00161EE7 /* Assets.xcassets in Resources */,
 				7D6ADAD320AD0CA40082CFCB /* achievements.json in Resources */,
 			);
@@ -370,17 +368,15 @@
 				7D6ADAE520AD1FE20082CFCB /* AchievementsRouter.swift in Sources */,
 				7D6ADAE320AD1C330082CFCB /* AchievementsProtocol.swift in Sources */,
 				7D6ADAEA20AD29630082CFCB /* UIFontExtensions.swift in Sources */,
-				7D6ADADA20AD11570082CFCB /* AchievementParser.swift in Sources */,
 				7D6ADAD120AD081C0082CFCB /* APIClient.swift in Sources */,
 				7D6ADACE20AD06A90082CFCB /* AchievementsInteractor.swift in Sources */,
 				7D66EFA520AA4A5300161EE7 /* AchievementsView.swift in Sources */,
 				7D66EF7720AA499B00161EE7 /* AppDelegate.swift in Sources */,
-				7D6ADADE20AD11910082CFCB /* Parser.swift in Sources */,
 				7D6ADAEC20AD29820082CFCB /* UIColorExtensions.swift in Sources */,
 				7D6ADAE720AD273C0082CFCB /* StashNavigationController.swift in Sources */,
-				7D6ADADC20AD11750082CFCB /* AchievementDisplayParser.swift in Sources */,
-				7D6ADAD720AD0FCE0082CFCB /* AchievementDisplay.swift in Sources */,
+				7D6ADAD720AD0FCE0082CFCB /* AchievementOverview.swift in Sources */,
 				7D6ADAE020AD15460082CFCB /* AchievementsPresenter.swift in Sources */,
+				7D7D117C20AF65690060EAC2 /* AchievementCell.swift in Sources */,
 				7D6ADAD520AD0F460082CFCB /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

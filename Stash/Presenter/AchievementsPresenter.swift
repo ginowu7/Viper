@@ -19,8 +19,8 @@ class AchievementsPresenter: AchievementsViewToPresenterProtocol {
 }
 
 extension AchievementsPresenter: AchievementsInteractorToPresenterProtocol {
-    func fetchSucceeded(_ achievements: [Achievement], display: AchievementDisplay) {
-        view?.showAchievements(achievements, display: display)
+    func fetchSucceeded(_ achievements: [Achievement], overview: AchievementOverview) {
+        view?.showAchievements(achievements, overview: overview)
     }
 
     func fetchFailed() {

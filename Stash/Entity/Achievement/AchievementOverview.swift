@@ -1,5 +1,5 @@
 //
-//  AchievementDisplay.swift
+//  AchievementOverview.swift
 //  Stash
 //
 //  Created by Gino Wu on 5/16/18.
@@ -9,6 +9,6 @@
 import Foundation
 
 // Used for VC display objects - can include color, titles, etc
-struct AchievementDisplay {
+struct AchievementOverview: Codable {
     let title: String
 }

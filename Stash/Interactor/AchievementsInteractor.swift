@@ -19,17 +19,17 @@ class AchievementsInteractor: AchievementsPresenterToInteractorProtocol {
     }
 
     func fetchAchievements() {
-        apiClient.remoteCall(withMethod: "GET", path: "/api/achievements", params: nil) { success, response in
-            guard let response = response as? [AnyHashable: Any],
-                let achievementsResponse = response["achievements"] as? [[AnyHashable: Any]],
-                let displayResponse = response["overview"] as? [AnyHashable: Any],
-                let achievementDisplay = AchievementDisplayParser.parse(from: displayResponse) else {
-                self.presenter?.fetchFailed()
+        apiClient.remoteCall(withMethod: "GET", path: "/api/achievements", params: nil) { [weak self] success, response in
+            guard let response = response, let wrapper = try? JSONDecoder().decode(Wrapper.self, from: response), success else {
+                self?.presenter?.fetchFailed()
                 return
             }
-            let achievements = achievementsResponse.compactMap(AchievementParser.parse(from:))
-            self.presenter?.fetchSucceeded(achievements, display: achievementDisplay)
+            self?.presenter?.fetchSucceeded(wrapper.achievements, overview: wrapper.overview)
         }
     }
 }
 
+fileprivate struct Wrapper: Decodable {
+    let achievements: [Achievement]
+    let overview: AchievementOverview
+}

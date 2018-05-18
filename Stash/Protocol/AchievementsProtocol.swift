@@ -17,7 +17,7 @@ protocol AchievementsViewToPresenterProtocol {
 }
 
 protocol AchievementsPresenterToViewProtocol {
-    func showAchievements(_ achievements: [Achievement], display: AchievementDisplay)
+    func showAchievements(_ achievements: [Achievement], overview: AchievementOverview)
     func showError()
 }
 
@@ -28,7 +28,7 @@ protocol AchievementsPresenterToInteractorProtocol {
 
 protocol AchievementsInteractorToPresenterProtocol {
     func fetchFailed()
-    func fetchSucceeded(_ achievements: [Achievement], display: AchievementDisplay)
+    func fetchSucceeded(_ achievements: [Achievement], overview: AchievementOverview)
 }
 
 protocol AchievementsPresenterToRouterProtocol {
