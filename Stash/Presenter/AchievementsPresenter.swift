@@ -10,7 +10,7 @@ import Foundation
 
 class AchievementsPresenter: AchievementsViewToPresenterProtocol {
     var router: AchievementsPresenterToRouterProtocol?
-    var view: AchievementsPresenterToViewProtocol?
+    weak var view: AchievementsPresenterToViewProtocol?
     var interactor: AchievementsPresenterToInteractorProtocol?
 
     func updateView() {

@@ -11,10 +11,11 @@ import Foundation
 class AchievementsInteractor: AchievementsPresenterToInteractorProtocol {
 
     let apiClient: APIClient
-    var presenter: AchievementsInteractorToPresenterProtocol?
 
-    // Replace with real APIClient for actual network activity - using mock for interview purposes
-    init(apiClient: APIClient = APIClientMock(jsonFilename: "achievements")) {
+    weak var presenter: AchievementsInteractorToPresenterProtocol?
+
+    // IRL - replace apiclient with wrapper around a networking library - or NSURLSession
+    init(apiClient: APIClient) {
         self.apiClient = apiClient
     }
 

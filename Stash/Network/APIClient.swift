@@ -16,7 +16,7 @@ class APIClientMock: APIClient {
     var successMock: Bool = true
     var jsonFilename: String?
 
-    init(jsonFilename: String) {
+    init(jsonFilename: String? = nil) {
         self.jsonFilename = jsonFilename
     }
 

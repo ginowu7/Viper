@@ -12,6 +12,7 @@ import UIKit
 class AchievementsView: UITableViewController {
 
     var presenter: AchievementsViewToPresenterProtocol?
+
     var overview: AchievementOverview? {
         didSet {
             navigationItem.title = overview?.title
@@ -50,6 +51,7 @@ class AchievementsView: UITableViewController {
 
 extension AchievementsView: AchievementsPresenterToViewProtocol {
     func showError() {
+        // TODO: Localize Strings
         let controller = UIAlertController(title: "Whoops", message: "Please try again later", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .cancel)
         controller.addAction(okAction)
@@ -64,11 +66,8 @@ extension AchievementsView: AchievementsPresenterToViewProtocol {
 
 extension AchievementsView {
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // TODO: Create helper to move boiler plate to extension
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AchievementCell.self)) as! AchievementCell
         AchievementCellFormatter.format(cell: cell, achievement: achievements[indexPath.row])
         return cell

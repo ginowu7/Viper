@@ -89,14 +89,19 @@ class AchievementCell: UITableViewCell {
         didSet {
             if isAccessible {
                 transparentView.isHidden = true
-                isUserInteractionEnabled = false
-                backgroundImageContainerView.layer.shadowColor = UIColor.black.cgColor
-
+                isUserInteractionEnabled = true
+                isShadowHidden = false
             } else {
                 transparentView.alpha = 0.6
-                isUserInteractionEnabled = true
-                backgroundImageContainerView.layer.shadowColor = UIColor.white.cgColor
+                isUserInteractionEnabled = false
+                isShadowHidden = true
             }
+        }
+    }
+
+    private var isShadowHidden: Bool = true {
+        didSet {
+            backgroundImageContainerView.layer.shadowColor = isShadowHidden ? UIColor.white.cgColor : UIColor.black.cgColor
         }
     }
 

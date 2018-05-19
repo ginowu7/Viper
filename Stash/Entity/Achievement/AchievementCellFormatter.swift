@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AchievementCellFormatter {
+enum AchievementCellFormatter {
 
     static func format(cell: AchievementCell, achievement: Achievement) {
         cell.backgroundImageUrl = achievement.imageUrl

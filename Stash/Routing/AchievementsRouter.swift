@@ -12,8 +12,9 @@ import UIKit
 class AchievementsRouter: AchievementsPresenterToRouterProtocol {
     static func create() -> UIViewController {
         let view = AchievementsView()
-        var presenter: AchievementsViewToPresenterProtocol & AchievementsInteractorToPresenterProtocol = AchievementsPresenter()
-        var interactor: AchievementsPresenterToInteractorProtocol = AchievementsInteractor()
+        let presenter: AchievementsViewToPresenterProtocol & AchievementsInteractorToPresenterProtocol = AchievementsPresenter()
+        // mocks the json for interview purpose
+        let interactor: AchievementsPresenterToInteractorProtocol = AchievementsInteractor(apiClient: APIClientMock(jsonFilename: "achievements"))
         let router: AchievementsPresenterToRouterProtocol = AchievementsRouter()
 
         view.presenter = presenter
