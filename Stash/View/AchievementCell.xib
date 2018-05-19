@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -98,8 +97,8 @@
                     <constraint firstItem="suv-Nm-bSh" firstAttribute="top" secondItem="SSg-Db-BTh" secondAttribute="top" constant="10" id="fhs-H8-O0N"/>
                     <constraint firstItem="OU2-N1-PgE" firstAttribute="centerY" secondItem="HDQ-l3-dkm" secondAttribute="centerY" id="gAY-KC-4gc"/>
                     <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerX" secondItem="SSg-Db-BTh" secondAttribute="centerX" id="k5v-dL-k3S"/>
-                    <constraint firstItem="awd-mJ-9ob" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leading" constant="36" id="lu6-Mc-hIM"/>
-                    <constraint firstAttribute="trailing" secondItem="awd-mJ-9ob" secondAttribute="trailing" constant="36" id="oPo-bS-x89"/>
+                    <constraint firstItem="awd-mJ-9ob" firstAttribute="leading" secondItem="suv-Nm-bSh" secondAttribute="leading" constant="15" id="lu6-Mc-hIM"/>
+                    <constraint firstItem="suv-Nm-bSh" firstAttribute="trailing" secondItem="awd-mJ-9ob" secondAttribute="trailing" constant="15" id="oPo-bS-x89"/>
                     <constraint firstItem="JsS-hZ-k8b" firstAttribute="centerY" secondItem="SSg-Db-BTh" secondAttribute="centerY" constant="-20" id="oQu-AC-MEY"/>
                     <constraint firstItem="n0h-Rh-aSp" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leading" id="prS-nQ-RSu"/>
                     <constraint firstItem="suv-Nm-bSh" firstAttribute="leading" secondItem="SSg-Db-BTh" secondAttribute="leadingMargin" constant="5" id="qHZ-0O-BV3"/>

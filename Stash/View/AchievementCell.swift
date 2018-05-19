@@ -71,7 +71,11 @@ class AchievementCell: UITableViewCell {
             trailingProgressLabel.textColor = .white
         }
     }
-    @IBOutlet private weak var transparentView: UIView!
+    @IBOutlet private weak var transparentView: UIView! {
+        didSet {
+            transparentView.alpha = 0.6
+        }
+    }
 
     var backgroundImageUrl: URL? {
         didSet {
@@ -92,7 +96,7 @@ class AchievementCell: UITableViewCell {
                 isUserInteractionEnabled = true
                 isShadowHidden = false
             } else {
-                transparentView.alpha = 0.6
+                transparentView.isHidden = false
                 isUserInteractionEnabled = false
                 isShadowHidden = true
             }
